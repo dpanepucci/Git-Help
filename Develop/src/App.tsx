@@ -1,15 +1,22 @@
-import { Outlet } from 'react-router-dom';
+import React, { useState } from 'react';
 import Nav from './components/Nav';
+import { Outlet } from 'react-router-dom';
+import { Candidate } from './interfaces/Candidate.interface';
 
-function App() {
+const App: React.FC = () => {
+  const [savedCandidates, setSavedCandidates] = useState<Candidate[]>([]);
+
+  const handleSaveCandidate = (candidate: Candidate) => {
+    setSavedCandidates((prev) => [...prev, candidate]);
+  };
+
   return (
-    <>
+    <div>
       <Nav />
-      <main>
-        <Outlet />
-      </main>
-    </>
+      <h1>GitHub Candidate Search</h1>
+      <Outlet context={{ savedCandidates, handleSaveCandidate }} />
+    </div>
   );
-}
+};
 
 export default App;
