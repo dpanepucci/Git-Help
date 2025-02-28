@@ -10,12 +10,11 @@ import { Link, useLocation } from 'react-router-dom';
     <nav>
       <ul>
         <li>
-          <Link to="/CandidateSearch" className={currentPage === '/CandidateSearch' ? 'active' : ''}>
-          Candidate Search</Link>
+        <Link to="/" className={currentPage === '/' ? 'active' : ''}>Home</Link>
         </li>
         <li>
           <Link to="/SavedCandidates" className={currentPage === '/SavedCandidates' ? 'active' : ''}
-          >Saved Candidates</Link>
+          >Potential Candidates</Link>
         </li>
       </ul>
     </nav>
