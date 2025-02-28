@@ -31,6 +31,11 @@ const CandidateSearch: React.FC = () => {
         <div>
           <h2>{candidate.login}</h2>
           <img src={candidate.avatar_url} alt={candidate.login} width={100} />
+          <p>Name: {candidate.name}</p>
+          <p>Location: {candidate.location || 'N/A'}</p>
+          <p>Email: {candidate.email || 'N/A'}</p>
+          <p>Company: {candidate.company || 'N/A'}</p>
+          <p>Bio: {candidate.bio || 'N/A'}</p>
           <button onClick={handleSave}>Save</button>
           <button onClick={fetchRandomCandidate}>Skip</button>
         </div>

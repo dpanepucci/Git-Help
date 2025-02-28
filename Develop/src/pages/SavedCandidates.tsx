@@ -13,6 +13,11 @@ const SavedCandidates: React.FC = () => {
           <div key={candidate.login}>
             <h3>{candidate.login}</h3>
             <img src={candidate.avatar_url} alt={candidate.login} width={100} />
+            <p>Name: {candidate.name}</p>
+            <p>Location: {candidate.location || 'N/A'}</p>
+            <p>Email: {candidate.email || 'N/A'}</p>
+            <p>Company: {candidate.company || 'N/A'}</p>
+            <p>Bio: {candidate.bio || 'N/A'}</p>
           </div>
         ))
       ) : (
