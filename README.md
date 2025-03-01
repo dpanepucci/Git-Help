@@ -1,7 +1,7 @@
 
 # Git Help
 
-![Git Help](ADD LINK HERE)
+## [Click Here to View](https://git-help.onrender.com)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -19,10 +19,10 @@
 - [Questions](#questions)
 
 ## Description
-Git Help is an application to help employers find the right candidate for the right job!
+Git Help is an application to help employers find the right candidate for the right job! Search through Github users to find the right one for your project. Add and Delete users to your saved list as you navigate the GitHub world!
 
 ## Installation
-Click the ![link](ADD LINK HERE) provided.
+Click the [link](https://git-help.onrender.com) provided.
 
 ## Usage
 Click the '+' to add the candidate to your saved candidate page. Click '-' to skip that candidate. To view all potential candidates use the navigation tab at the top right of the screen. From here you can delete old candidates that just didn't work out!
