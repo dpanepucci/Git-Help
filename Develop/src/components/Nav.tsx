@@ -19,6 +19,6 @@ import '../../stylePages/Nav.css';
       </ul>
     </nav>
   );
-};
+}
 
 export default Nav;
