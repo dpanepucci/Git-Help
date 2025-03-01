@@ -35,7 +35,6 @@ const CandidateSearch: React.FC = () => {
         <div>
             <img className='img' src={candidate.avatar_url} alt={candidate.login} width={100} />
             <h2>{candidate.login}</h2>
-            <p>Name: {candidate.name}</p>
             <p>Location: {candidate.location || 'N/A'}</p>
             <p>Email: {candidate.email || 'N/A'}</p>
             <p>Company: {candidate.company || 'N/A'}</p>

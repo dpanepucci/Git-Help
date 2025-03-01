@@ -20,7 +20,6 @@ const SavedCandidates: React.FC = () => {
             <br />
             <h3>{candidate.login}</h3>
             <div className='savedCandidatesInfo'>
-              <p>Name: {candidate.name || 'N/A'}</p>
               <p>Location: {candidate.location || 'N/A'}</p>
               <p>Email: {candidate.email || 'N/A'}</p>
               <p>Company: {candidate.company || 'N/A'}</p>
