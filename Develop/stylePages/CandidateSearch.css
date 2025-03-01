@@ -1,0 +1,45 @@
+.candidateCard {
+    background-color: black;
+    border-radius: 10%;
+    width: 300px;
+    display: flex;
+}
+
+/* Profile Pic */
+ .img {
+    width:100%;
+    border-radius: 10% 10% 0 0;
+ }
+
+ /* Save and Skip buttons */
+ #buttonSave {
+    display: flex;
+    background-color: green;
+ }
+
+ #buttonSave:hover {
+    background-color: darkgreen;
+ }
+
+ #buttonSkip {
+    display: flex;
+    background-color: red;
+ }
+
+#buttonSkip:hover {
+    background-color: darkred;
+}
+
+#buttonSave, #buttonSkip {
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}

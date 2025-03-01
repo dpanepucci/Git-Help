@@ -1,0 +1,8 @@
+/* Nav Tabs at the top of the page */
+.nav {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    font-size: larger;
+}

@@ -6,7 +6,7 @@ import { Candidate } from './interfaces/Candidate.interface';
 const App: React.FC = () => {
   const [savedCandidates, setSavedCandidates] = useState<Candidate[]>([]);
 
-  // Load saved candidates from localStorage when the app starts
+  // Load saved candidates from localStorage 
   useEffect(() => {
     const storedCandidates = localStorage.getItem('savedCandidates');
     if (storedCandidates) {
@@ -14,7 +14,7 @@ const App: React.FC = () => {
     }
   }, []);
 
-  // Save to localStorage whenever savedCandidates changes
+  // Save to localStorage 
   useEffect(() => {
     localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
   }, [savedCandidates]);
@@ -22,7 +22,7 @@ const App: React.FC = () => {
   const handleSaveCandidate = (candidate: Candidate) => {
     setSavedCandidates((prev) => {
       const updatedCandidates = [...prev, candidate];
-      localStorage.setItem('savedCandidates', JSON.stringify(updatedCandidates)); // Save immediately
+      localStorage.setItem('savedCandidates', JSON.stringify(updatedCandidates)); 
       return updatedCandidates;
     });
   };
@@ -31,7 +31,7 @@ const App: React.FC = () => {
   const handleDeleteCandidate = (candidateLogin: string) => {
     setSavedCandidates((prev) => {
       const updatedCandidates = prev.filter((c) => c.login !== candidateLogin);
-      localStorage.setItem('savedCandidates', JSON.stringify(updatedCandidates)); // Save immediately
+      localStorage.setItem('savedCandidates', JSON.stringify(updatedCandidates)); 
       return updatedCandidates;
     });
   };
@@ -39,7 +39,7 @@ const App: React.FC = () => {
   return (
     <div>
       <Nav />
-      <h1>GitHub Candidate Search</h1>
+      <h1 style={{ textAlign: 'center' }} >GitHub Candidate Search</h1>
       <Outlet context={{ savedCandidates, handleSaveCandidate, handleDeleteCandidate }} />
     </div>
   );
