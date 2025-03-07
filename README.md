@@ -5,7 +5,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Screenshots
+## Screenshots 
 
 ![Screenshot](./Assets/Candidate-Front.png 'Landing Page')
 ![Screenshot](./Assets/Candidate-Back.png 'Saved Candidates Tab')
